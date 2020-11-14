@@ -1,0 +1,14 @@
+server:
+  port: 8000
+#debug: true
+spring:
+  application:
+    name: could-coustmer-payment-8000
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      # 服务注册的地址
+      # defaultZone: http://127.0.0.1:7001/eureka
+      defaultZone: http://Eureka7001.com:7001/eureka/,http://Eureka7002.com:7002/eureka/

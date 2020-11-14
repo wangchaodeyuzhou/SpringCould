@@ -1,0 +1,8 @@
+server:
+  port: 8003     # zk的端口号
+spring:
+  application:
+    name:  cloud-provider-payment-zookeeper  # 微服务的服务名称
+  cloud:
+    zookeeper:
+      connect-string: 192.168.213.112:2181  # zk的连接地址
