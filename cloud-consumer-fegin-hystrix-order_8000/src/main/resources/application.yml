@@ -1,0 +1,15 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: cloud-provider-hystrix-order
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://Eureka7001.com:7001/eureka/
+feign:
+  hystrix:
+    enabled: true

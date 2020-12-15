@@ -31,4 +31,9 @@ public class PaymentController {
          if(null!=payment) return new CommonResult(200,"查询成功端口号为 "+ServerPort, payment);
          else return new CommonResult(404,"查询失败",null);
      }
+
+    @GetMapping("/payment/lb")
+    public String getPaymentLB(){
+        return ServerPort;
+    }
 }
