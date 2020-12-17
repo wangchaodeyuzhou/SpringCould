@@ -1,2 +1,9 @@
 server:
   port: 9001
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://Eureka7001.com:7001/eureka/
