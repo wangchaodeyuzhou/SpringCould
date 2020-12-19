@@ -3,16 +3,41 @@ server:
 spring:
   application:
     name: cloud-config-center
+
+
   cloud:
     config:
       server:
         git:
-          uri: git@github.com:wangchaodeyuzhou/SpringCould_config.git
+          # uri: git@github.com:wangchaodeyuzhou/SpringCould_config.git
+          uri:  https://github.com/wangchaodeyuzhou/SpringCould_config.git
           search-paths:
             - SpringCould_config
+          force-pull: true
+          username: 1028754318@qq.com
+          password: 123456789wrC@
+
       label: master
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+
+
+
+
+# rabbitmq刷新时候暴露的配置端点
+
+management: # 暴露触发消息总线的地址
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"

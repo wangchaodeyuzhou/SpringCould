@@ -70,4 +70,12 @@ public class PaymentController {
         }
         return ServerPort;
     }
+
+    // zikpin测试搞一搞
+
+    @GetMapping(value = "/payment/zikpin")
+    public String TextZipkin(){
+        System.out.println("我他妈的贷记卡多久啊老大");
+        return "你迟到了你都v阿拉丁";
+    }
 }

@@ -24,6 +24,11 @@
         <module>cloud-consumer-hystrix-dashboard_9001</module>
         <module>could_gateways_gateway_9527</module>
         <module>cloud_config_center_3344</module>
+        <module>cloud_config_client_3355</module>
+        <module>cloud_config_client_3366</module>
+        <module>cloud_stream_rabbitMq_provider_8801</module>
+        <module>cloud_stream_rabbitMq_consumer_8802</module>
+        <module>cloud_stream_rabbitMq_consumer_8803</module>
     </modules>
     <!--pom父工程-->
     <packaging>pom</packaging>
